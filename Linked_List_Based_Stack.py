@@ -25,15 +25,13 @@ class Stack:
     def peek(self):
         if self.is_empty():
             return None
-        return self.top.data                                      # return the data of the current top without removing it
+        return self.top.data                                       # return the data of the current top without removing it
 
     def is_empty(self):
-        return self.top is None                                   # return True if the stack is empty, False otherwise
+        return self.top is None                                    # return True if the stack is empty, False otherwise
 
-    def is_full(self):
-        # linked-based stacks are usually not limited by a fixed size, so always return False
+    def is_full(self):                                             # linked-based stacks are usually not limited by a fixed size, so always return False
         return False
 
-    def get_size(self):
-        # return the current size of the stack
+    def get_size(self):                                            # return the current size of the stack
         return self.size
